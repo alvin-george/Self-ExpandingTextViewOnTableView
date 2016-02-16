@@ -14,6 +14,9 @@
 		AD12C69A1C50B21200EA0489 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD12C6981C50B21200EA0489 /* LaunchScreen.storyboard */; };
 		AD12C6A51C50B21200EA0489 /* ListWrapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD12C6A41C50B21200EA0489 /* ListWrapTests.swift */; };
 		AD12C6B01C50B21200EA0489 /* ListWrapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD12C6AF1C50B21200EA0489 /* ListWrapUITests.swift */; };
+		AD12C6BE1C50B2D700EA0489 /* ListWrapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD12C6BD1C50B2D700EA0489 /* ListWrapTableViewCell.swift */; };
+		AD12C6C01C50B32000EA0489 /* ListWrapSecondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD12C6BF1C50B32000EA0489 /* ListWrapSecondTableViewCell.swift */; };
+		AD9857D01C52077F00D2B597 /* PullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9857CF1C52077F00D2B597 /* PullViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		AD12C6AB1C50B21200EA0489 /* ListWrapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListWrapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD12C6AF1C50B21200EA0489 /* ListWrapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWrapUITests.swift; sourceTree = "<group>"; };
 		AD12C6B11C50B21200EA0489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD12C6BD1C50B2D700EA0489 /* ListWrapTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListWrapTableViewCell.swift; sourceTree = "<group>"; };
+		AD12C6BF1C50B32000EA0489 /* ListWrapSecondTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListWrapSecondTableViewCell.swift; sourceTree = "<group>"; };
+		AD9857CF1C52077F00D2B597 /* PullViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,9 @@
 				AD12C6961C50B21200EA0489 /* Assets.xcassets */,
 				AD12C6981C50B21200EA0489 /* LaunchScreen.storyboard */,
 				AD12C69B1C50B21200EA0489 /* Info.plist */,
+				AD12C6BD1C50B2D700EA0489 /* ListWrapTableViewCell.swift */,
+				AD12C6BF1C50B32000EA0489 /* ListWrapSecondTableViewCell.swift */,
+				AD9857CF1C52077F00D2B597 /* PullViewController.swift */,
 			);
 			path = ListWrap;
 			sourceTree = "<group>";
@@ -256,8 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD12C6BE1C50B2D700EA0489 /* ListWrapTableViewCell.swift in Sources */,
 				AD12C6921C50B21200EA0489 /* ViewController.swift in Sources */,
 				AD12C6901C50B21200EA0489 /* AppDelegate.swift in Sources */,
+				AD9857D01C52077F00D2B597 /* PullViewController.swift in Sources */,
+				AD12C6C01C50B32000EA0489 /* ListWrapSecondTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,7 +386,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -399,10 +411,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Abdusha M A (HL79JK6V5Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Abdusha M A (HL79JK6V5Q)";
 				INFOPLIST_FILE = ListWrap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fingent.ListWrap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5e611a42-ca75-4ec3-858c-e109b61c35de";
 			};
 			name = Debug;
 		};
@@ -410,10 +426,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				INFOPLIST_FILE = ListWrap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fingent.ListWrap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5e611a42-ca75-4ec3-858c-e109b61c35de";
 			};
 			name = Release;
 		};
@@ -484,6 +504,7 @@
 				AD12C6B61C50B21200EA0489 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AD12C6B71C50B21200EA0489 /* Build configuration list for PBXNativeTarget "ListWrapTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +513,7 @@
 				AD12C6B91C50B21200EA0489 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AD12C6BA1C50B21200EA0489 /* Build configuration list for PBXNativeTarget "ListWrapUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +522,7 @@
 				AD12C6BC1C50B21200EA0489 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
